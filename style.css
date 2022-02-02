@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #2b88f0;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+h3 {
+    color: #fff;
+    margin: 10px 0 20px;
+    /*
+    margin 인자의 갯수별 적용 차이
+    1개 : 네 면 모두
+    2개 : 세로, 가로
+    3개 : 위, 횡방향, 아래
+    4개 : 위, 오른쪽, 아래, 왼쪽 (위부터 시계방향)
+    */
+    text-align: center;
+}
+
+.container {
+    width: 100%;   
+}
+
+textarea {
+    border : none;
+    display : block; /* 가로 한줄 차지 */
+    width: 100%;
+    height: 100px;
+    font-family: inherit;
+    padding: 10px;
+    margin: 0 0 20px;
+    font-size: 16px;
+}
+
+.tag {
+    background-color: #f0932b;
+    color: #fff;
+    border-radius: 50px; /* px크기가 커질 수록 경계선이 둥글어짐 */
+    padding: 10px 20px;
+    margin: 0 5px 10px 0px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.tag.highlight { /* html 파일에서 class="a b" 는 css 파일에서 a.b로 호출 가능하다 */
+    background-color: #273c75;
+}
